@@ -18,8 +18,8 @@ dict : 사전
 str1 = "Python"
 bool = True
 str2 = 'Anavonda'
-float = 10.0 # 10 == 10.0
-int = 7
+float_s = 10.0 # 10 == 10.0
+int_s = 7
 list = [str1,str2]
 dict = {
     "name": "Machine Learning",
@@ -33,8 +33,8 @@ set = {7,8,9}
 print(type(str1))
 print(type(bool))
 print(type(str2))
-print(type(float))
-print(type(list))
+print(type(float_s))
+print(type(int_s))
 print(type(dict))
 print(type(tuple))
 print(type(set))
@@ -92,3 +92,41 @@ print(">>>>*")
 print("i1 * i2 :", i1 * i2)
 print("f1 * f2 : ", f1 * f2)
 print("big_int1 * big_int2 : ", big_int1 * big_int2)
+
+
+# 형 변환 실습
+a = 3. #0 생략가능
+b = 6
+c = .7 #마찬가지로 0 생략가능
+d = 12.7
+
+
+# 타입 출력
+print(type(a)),print(type(b)) , print(type(c)), print(type(d))
+
+# 형변환 
+print(float(b))
+print(int(c))
+print(int(d))
+print(int(True)) # Ture는 1 False는 0
+print(float(False))
+print(complex(3))
+print(complex('3')) #문자형 -> 숫자형으로
+print(complex(False))
+
+
+
+# 수치 연산 함수
+print(abs(-7))
+x, y = divmod(100, 8)
+print(x, y)
+
+print(pow(5,4), 5**4)
+
+
+# 외부 모듈
+import math
+
+print(math.ceil(5.1)) # x 이상의 수 중에서 가장 작은 정수
+print(math.pi)
+
