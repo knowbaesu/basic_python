@@ -113,3 +113,25 @@ print(dir(im_str)) #__iter__
 # 출력
 for i in im_str:
     print(im_str)
+
+# 슬라이싱 
+
+str_s1 = "Nice Python"
+
+print(len(str_s1))
+# 슬라이싱 연습
+print(str_s1[:3])
+print(str_s1[5:11])
+print(str_s1[:len(str_s1)]) # str_sl[:11]
+print(str_s1[:len(str_s1)-1])
+print(str_s1[1:4:2])  #세번째 인수는 단위(몇개단위로 점프할건지)
+print(str_s1[-5:])
+print(str_s1[1:-2])
+print(str_s1[::2]) # 이것도 마찬가지로 세번째 인수는 단위(몇개단위로 점프할건지)
+
+# 아스키 코드(또는 유니코드)
+
+a = 'z'
+
+print(ord(a)) # z에 해당하는 아스키코드는 122
+print(chr(122)) #122에 해당하는 알파벳은 z
