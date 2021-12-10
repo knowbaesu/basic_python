@@ -36,3 +36,4 @@ print('>>>>>>>>>')
 print('c+d', c+d)
 print('c * 3', c * 3)
 print("'Test'+ c[0]", 'Test' + str(c[0]))
+
