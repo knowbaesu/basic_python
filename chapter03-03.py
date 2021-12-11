@@ -37,3 +37,68 @@ print('c+d', c+d)
 print('c * 3', c * 3)
 print("'Test'+ c[0]", 'Test' + str(c[0]))
 
+#값 비교
+print(c == c[:3])
+print(c[:3])
+print(c)
+print(c[:3] + c[3:]) 
+
+# Indentity(id)
+temp = c
+print(temp, c)
+print(id(temp))
+print(id(c))
+
+# 리시트 수정, 삭제
+print('>>>>>>>>>')
+
+c[0] = 4
+print('c - ', c)
+c[1:2] = ['a','b','c']   # [ ['a','b','c']] #괄호가 두개인 경우인경우도 생각해보기.
+print('c - ', c)
+c[1] = ['a','b','c'] # 56번과 같아 보이지만 구조는 달라짐. 리스트안에 리스트!!
+print('c - ', c)
+c[1:3] = [] #삭제
+print('c - ', c)
+del c[2]  #삭제 
+print('c - ', c)
+
+# 리스트 함수
+a = [5 ,2, 3, 1, 4]
+
+print('a - ', a)
+a.append(10)
+print('a - ', a)
+a.sort()
+print('a - ', a)
+a.reverse()
+print('a - ', a)
+print('a - ', a.index(3), a[3])
+a.insert(2, 7)
+print('a - ', a)
+a.reverse()
+print('a - ', a)
+
+# del a[6]
+# print('a - ', a)
+a.remove(10)
+print('a - ', a)
+print('a - ', a.pop())
+print('a - ', a)
+print('a - ', a.pop())
+print('a - ', a)
+print('a - ', a.count(4))
+
+ex = [8,9]
+a.extend(ex)
+print('a - ', a)
+
+
+# 삭제 : remove, pop, del
+
+
+# 반복문 활용
+
+while a :
+    data = a.pop()
+    print(data)
