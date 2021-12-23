@@ -1,6 +1,4 @@
-i = 1
-x = int(input())
-k = "*"
-for i in range(1,x+1):
-    print(' '*(x-i),k*i)
-    i = i+1
+a = [1,2,3,4,5]
+
+for i in range(0,20):
+    print(i)
